@@ -670,6 +670,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.-mt-7{
+  margin-top: -1.75rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -1028,6 +1032,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pr-7{
   padding-right: 1.75rem;
 }
@@ -1133,6 +1142,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1190,6 +1204,68 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-0::before{
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:left-0::before{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:z-20::before{
+  content: var(--tw-content);
+  z-index: 20;
+}
+
+.before\:z-50::before{
+  content: var(--tw-content);
+  z-index: 50;
+}
+
+.before\:h-full::before{
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:w-2\/5::before{
+  content: var(--tw-content);
+  width: 40%;
+}
+
+.before\:bg-black::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.before\:bg-gradient-to-r::before{
+  content: var(--tw-content);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.before\:from-black::before{
+  content: var(--tw-content);
+  --tw-gradient-from: #000;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
+
+.before\:to-white::before{
+  content: var(--tw-content);
+  --tw-gradient-to: #fff;
+}
+
+.before\:content-\[\'\'\]::before{
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1205,9 +1281,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
+.after\:right-0::after{
+  content: var(--tw-content);
+  right: 0px;
+}
+
 .after\:z-10::after{
   content: var(--tw-content);
   z-index: 10;
+}
+
+.after\:z-20::after{
+  content: var(--tw-content);
+  z-index: 20;
+}
+
+.after\:z-50::after{
+  content: var(--tw-content);
+  z-index: 50;
 }
 
 .after\:h-full::after{
@@ -1220,15 +1311,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.after\:w-2\/5::after{
+  content: var(--tw-content);
+  width: 40%;
+}
+
 .after\:bg-black::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.after\:bg-gradient-to-l::after{
+  content: var(--tw-content);
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.after\:from-white::after{
+  content: var(--tw-content);
+  --tw-gradient-from: #fff;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
+}
+
+.after\:to-black::after{
+  content: var(--tw-content);
+  --tw-gradient-to: #000;
+}
+
 .after\:opacity-40::after{
   content: var(--tw-content);
   opacity: 0.4;
+}
+
+.after\:content-\[\'\'\]::after{
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .hover\:bg-black:hover{
@@ -1341,6 +1458,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:text-4xl{
